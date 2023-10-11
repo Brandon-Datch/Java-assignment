@@ -26,7 +26,7 @@ public class marklistEntry {
             double average = total / 3.0;
             String formatAverage = String.format("%.2f", average);
             studentData[i][5] = String.valueOf(total);
-            studentData[i][6] = String.valueOf(average);
+            studentData[i][6] = String.valueOf(formatAverage);
 
             if (average >= 70) {
                 studentData[i][7] = "A";
@@ -46,7 +46,7 @@ public class marklistEntry {
         }
 
         System.out.println("*********************************************************************************");
-        System.out.println("\n\t\t\tSTUDENT MARKLIST:");
+        System.out.println("\t\t\t\t\tSTUDENT MARKLIST");
         System.out.println("*********************************************************************************");
         System.out.printf("%-10s%-15s%-10s%-10s%-10s%-15s%-10s%-10s%-10s\n", "Roll No", "Name", "Subject 1", "Subject 2", "Subject 3", "Total", "Average", "Grade", "RESULT");
 
